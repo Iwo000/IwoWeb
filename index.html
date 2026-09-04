@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head> -_-
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
      
     <style>
+        nav, html{
+            text-align: auto;
+            nav-left: auto;
+        }
         body, html {
           text-align: center;
           background-color: white;
           color: black;
         }
-         .spacing {
+        .spacing {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           gap: 10px;
           padding: 20px;
-         }
+        }
         .containerBl {
           display: inline-block; background: white;
           margin: auto;
@@ -30,7 +34,7 @@
           margin: auto;
           box-shadow: 0 0 0 #B75E88;
           border-radius: 13px #B75E88; 
-          padding: 30px 30px; solid #B75E88;
+          padding: 10px 30px; solid #B75E88;
         }
 
         .container {
@@ -47,81 +51,86 @@
           border: 1px solid #FF0000;
           padding: 20px;
         }
-         .card {
+        .card {
            display: inline-block; background: white;
            border-radius: 12px; padding: 30px 50px;
            box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 10px;
-         }
+        }
         
     </style>
 </head>
     <body>
-         <h1>
-        Hey, I'm Iwo Arkadiusz Malecki
-         </h1>
-         <img src="IMG_3474.jpeg" style="width:20%; height:auto;" style="width:20%; height:auto;alt="A descriptive look at the picture">
-    </div>
+        <h1>
+            Hey, I'm Iwo Arkadiusz Malecki
+        </h1>
+
+        <img src="IMG_3474.jpeg" style="width:20%; height:auto;" style="width:20%; height:auto;alt="A descriptive look at the picture">
+
         <br>
         <br>
+        
+        
+        <nav>
+            <a href="https://www.snapchat.com/add/iwo_ma?share_id=ohd_cx9hQ2yUNDSw7g6JkA&locale=nb_NO">Snap</a>
+            
+            <a href="https://www.tiktok.com/@iwo000r?_r=1&_t=ZN-98GrwDrOKSE">TikTok</a>
+            
+            <a href="https://www.youtube.com/@iwo000r">Youtube</a>
+            
+            <a href="https://www.twitch.tv/iwo000">Twitch</a> 
+            <br>
+            <a href="/Test.html/">Twitch</a>
+        </nav>
+
+
         <div class="containerP">
-        <h2>
-            About me
-        </h2>
-            <p>
-                Im Polish 
-                <br>
-                i uhh spend too much time doing things like this
-                <br>
-                RUD vgs, Datateknologi og elektronikk,  SK 3år
-                <br>
-            </p>
+            <h2>
+                About me
+            </h2>
+                <p>
+                    Im Polish 
+                    <br>
+                    i uhh spend too much time doing things like this
+                    <br>
+                    RUD vgs, Datateknologi og elektronikk,  SK 3år
+                    <br>
+                </p>
         </div>
-         <br>
-        <div class="containerP">
-             <h2>
-                  links 'n shi
-             </h2>
-             <br>
-             <p>
-                  <a href="https://www.snapchat.com/add/iwo_ma?share_id=ohd_cx9hQ2yUNDSw7g6JkA&locale=nb_NO">Snap</a>
-                  <br>
-                  <a href="https://www.tiktok.com/@iwo000r?_r=1&_t=ZN-98GrwDrOKSE">TikTok</a>
-                  <br>
-                  <a href="https://www.youtube.com/@iwo000r">Youtube</a>
-                  <br>
-                  <a href="https://www.twitch.tv/iwo000">Twitch</a>  
-             </p>
-        </div>
+
         <br>
         <div class="containerP">
             <h2>
                 What i like rn:
             </h2>
-                <p>
-                    Minecraft 
-                    <br>
-                    Larping
-                    <br>
-                    Arcane 
-                    <br>
-                    TQQ
-                    <br>
-                    Electronics, C++, esp 32 ect
-                    <br> 
-                    homelabing
-                    <br> 
-                    3d printing, love my ender 3
-                    <br>
-                    <button id="fakeButton">Click mwe</button>
-                </p>
+
+            <p>
+                Minecraft 
+                <br>
+                Larping
+                <br>
+                Arcane 
+                <br>
+                TQQ
+                <br>
+                Electronics, C++, esp 32 ect
+                <br> 
+                homelabing
+                <br> 
+                3d printing, love my ender 3
+                <br>
+                <button id="fakeButton">Click mwe</button>
+            </p>
         
         </div>
+
         <br>
          
         <div class="containerP">
-        <h2>
-            Working on rn
-        </h2>
+
+            <h2>
+                Working on rn
+            </h2>
+
             <p>
                 Robot arm, med Nathaniel (FUCK, gotta workj on that lol)
                 <br>
@@ -129,20 +138,37 @@
                 <br>
                 Gimmi ideas?
             </p>
-            </div>
 
-         <br>
+        </div>
 
-         <div class="containerP">
-              <h2>
-                   Done
-              </h2>
-              <p>
-                   Weather station, FINALLY
-              </p>
-         </div>
         <br>
-        <input type="what next?" style="width: 300px; height: 30px;">
+
+        <div class="containerP">
+            <h2>
+                Done
+            </h2>
+
+            <p>
+                Weather station, FINALLY
+            </p>
+        </div>
+
+        <br>
+
+        <form onsubmit="event.preventDefault();">
+            <h3>
+                Gi meg din info? PLS
+            </h3>
+            <input type="text" id="gimmiInfo" name="infoGive" style="width: 300px; height: 30px;">
+            <br>
+        
+            <input type="radio" id="HTML" name="IDK" label="HTML">
+            <label for="HTML">Ja, du kan selge dataen min</label>
+            <br>
+
+            <input type="reset" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
         <br>
         <script type="text/javascript" src="https://www.counters-free.net/count/jf9q"></script><br>
         <!--<a href='https://www.counters-free.net/'>Counters-Free.net</a> <script type='text/javascript' src='https://whomania.com/ctr?id=a4d6c5120ece6c2db065b438d529abce48113e6c'></script>
@@ -154,32 +180,3 @@
     </body>  
      
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
