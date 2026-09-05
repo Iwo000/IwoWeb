@@ -1,0 +1,53 @@
+<style>
+    nav, html{
+        text-align: auto;
+        nav-left: auto;
+        float: left;
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        width: auto;
+        background-color: rgb(96, 96, 96);
+        border-radius: 15px;
+    }
+    body, html {
+        text-align: center;        
+        background-color: white;
+        margin: 20px;
+        line-height: 26px;
+        color: black;
+    }
+    .spacing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .containerP {
+        align-items: center;
+        background: white;
+        margin: auto;
+        box-shadow: 0 0 0 #B75E88;
+        border-radius: 13px #B75E88; 
+        padding: 10px 30px; solid #B75E88;
+    }
+
+    #menu {
+        float: left;
+    }
+
+    li a{
+        text-decoration: none;
+        color: rgb(222, 222, 222);
+    }
+
+    li a:hover{
+        opacity: 0.8;
+    }
+</style>
